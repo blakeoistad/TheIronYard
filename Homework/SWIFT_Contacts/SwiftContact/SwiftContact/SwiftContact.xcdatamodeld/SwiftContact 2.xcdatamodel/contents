@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Contact" representedClassName=".Contact" syncable="YES">
+        <attribute name="contactAddressCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactAddressState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactAddressStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactAddressZipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactRating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="-54" positionY="-9" width="128" height="225"/>
+    </elements>
+</model>

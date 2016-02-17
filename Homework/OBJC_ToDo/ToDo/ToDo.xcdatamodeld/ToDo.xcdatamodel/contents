@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="ToDoList" representedClassName="ToDoList" syncable="YES">
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="todoDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todoDone" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="todoDueDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="todoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todoOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="todoPriority" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ToDoList" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>

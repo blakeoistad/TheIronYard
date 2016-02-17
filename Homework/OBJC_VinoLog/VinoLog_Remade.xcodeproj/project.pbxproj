@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B45501281BD6982C00F8BFB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B45501271BD6982C00F8BFB2 /* main.m */; };
+		B455012B1BD6982C00F8BFB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B455012A1BD6982C00F8BFB2 /* AppDelegate.m */; };
+		B455012E1BD6982C00F8BFB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B455012D1BD6982C00F8BFB2 /* ViewController.m */; };
+		B45501311BD6982C00F8BFB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B455012F1BD6982C00F8BFB2 /* Main.storyboard */; };
+		B45501341BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B45501321BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodeld */; };
+		B45501361BD6982C00F8BFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45501351BD6982C00F8BFB2 /* Assets.xcassets */; };
+		B45501391BD6982C00F8BFB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45501371BD6982C00F8BFB2 /* LaunchScreen.storyboard */; };
+		B45501441BD6994600F8BFB2 /* Vino+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B45501411BD6994600F8BFB2 /* Vino+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		B45501451BD6994600F8BFB2 /* Vino.m in Sources */ = {isa = PBXBuildFile; fileRef = B45501431BD6994600F8BFB2 /* Vino.m */; settings = {ASSET_TAGS = (); }; };
+		B45501491BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B45501481BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B455014C1BD69B8B00F8BFB2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B455014B1BD69B8B00F8BFB2 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B455014E1BD6C27500F8BFB2 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B455014D1BD6C27500F8BFB2 /* Settings.plist */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B45501231BD6982C00F8BFB2 /* VinoLog_Remade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinoLog_Remade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45501271BD6982C00F8BFB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B45501291BD6982C00F8BFB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B455012A1BD6982C00F8BFB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B455012C1BD6982C00F8BFB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B455012D1BD6982C00F8BFB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B45501301BD6982C00F8BFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B45501331BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VinoLog_Remade.xcdatamodel; sourceTree = "<group>"; };
+		B45501351BD6982C00F8BFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B45501381BD6982C00F8BFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B455013A1BD6982C00F8BFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45501401BD6994600F8BFB2 /* Vino+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Vino+CoreDataProperties.h"; path = "VinoLog_Remade/Vino+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B45501411BD6994600F8BFB2 /* Vino+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Vino+CoreDataProperties.m"; path = "VinoLog_Remade/Vino+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B45501421BD6994600F8BFB2 /* Vino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vino.h; path = VinoLog_Remade/Vino.h; sourceTree = "<group>"; };
+		B45501431BD6994600F8BFB2 /* Vino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vino.m; path = VinoLog_Remade/Vino.m; sourceTree = "<group>"; };
+		B45501471BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VinoPreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		B45501481BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VinoPreviewCollectionViewCell.m; sourceTree = "<group>"; };
+		B455014A1BD69B8B00F8BFB2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B455014B1BD69B8B00F8BFB2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B455014D1BD6C27500F8BFB2 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B45501201BD6982C00F8BFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B455011A1BD6982C00F8BFB2 = {
+			isa = PBXGroup;
+			children = (
+				B45501461BD6994E00F8BFB2 /* Data */,
+				B45501251BD6982C00F8BFB2 /* VinoLog_Remade */,
+				B45501241BD6982C00F8BFB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B45501241BD6982C00F8BFB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B45501231BD6982C00F8BFB2 /* VinoLog_Remade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B45501251BD6982C00F8BFB2 /* VinoLog_Remade */ = {
+			isa = PBXGroup;
+			children = (
+				B45501291BD6982C00F8BFB2 /* AppDelegate.h */,
+				B455012A1BD6982C00F8BFB2 /* AppDelegate.m */,
+				B455012C1BD6982C00F8BFB2 /* ViewController.h */,
+				B455012D1BD6982C00F8BFB2 /* ViewController.m */,
+				B45501471BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.h */,
+				B45501481BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.m */,
+				B455014A1BD69B8B00F8BFB2 /* DetailViewController.h */,
+				B455014B1BD69B8B00F8BFB2 /* DetailViewController.m */,
+				B455012F1BD6982C00F8BFB2 /* Main.storyboard */,
+				B45501351BD6982C00F8BFB2 /* Assets.xcassets */,
+				B45501371BD6982C00F8BFB2 /* LaunchScreen.storyboard */,
+				B45501261BD6982C00F8BFB2 /* Supporting Files */,
+			);
+			path = VinoLog_Remade;
+			sourceTree = "<group>";
+		};
+		B45501261BD6982C00F8BFB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B455014D1BD6C27500F8BFB2 /* Settings.plist */,
+				B455013A1BD6982C00F8BFB2 /* Info.plist */,
+				B45501271BD6982C00F8BFB2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B45501461BD6994E00F8BFB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B45501321BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodeld */,
+				B45501401BD6994600F8BFB2 /* Vino+CoreDataProperties.h */,
+				B45501411BD6994600F8BFB2 /* Vino+CoreDataProperties.m */,
+				B45501421BD6994600F8BFB2 /* Vino.h */,
+				B45501431BD6994600F8BFB2 /* Vino.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B45501221BD6982C00F8BFB2 /* VinoLog_Remade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B455013D1BD6982C00F8BFB2 /* Build configuration list for PBXNativeTarget "VinoLog_Remade" */;
+			buildPhases = (
+				B455011F1BD6982C00F8BFB2 /* Sources */,
+				B45501201BD6982C00F8BFB2 /* Frameworks */,
+				B45501211BD6982C00F8BFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VinoLog_Remade;
+			productName = VinoLog_Remade;
+			productReference = B45501231BD6982C00F8BFB2 /* VinoLog_Remade.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B455011B1BD6982C00F8BFB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Blake Oistad";
+				TargetAttributes = {
+					B45501221BD6982C00F8BFB2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B455011E1BD6982C00F8BFB2 /* Build configuration list for PBXProject "VinoLog_Remade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B455011A1BD6982C00F8BFB2;
+			productRefGroup = B45501241BD6982C00F8BFB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B45501221BD6982C00F8BFB2 /* VinoLog_Remade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B45501211BD6982C00F8BFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45501391BD6982C00F8BFB2 /* LaunchScreen.storyboard in Resources */,
+				B455014E1BD6C27500F8BFB2 /* Settings.plist in Resources */,
+				B45501361BD6982C00F8BFB2 /* Assets.xcassets in Resources */,
+				B45501311BD6982C00F8BFB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B455011F1BD6982C00F8BFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45501441BD6994600F8BFB2 /* Vino+CoreDataProperties.m in Sources */,
+				B45501491BD69B3A00F8BFB2 /* VinoPreviewCollectionViewCell.m in Sources */,
+				B45501451BD6994600F8BFB2 /* Vino.m in Sources */,
+				B455014C1BD69B8B00F8BFB2 /* DetailViewController.m in Sources */,
+				B455012E1BD6982C00F8BFB2 /* ViewController.m in Sources */,
+				B455012B1BD6982C00F8BFB2 /* AppDelegate.m in Sources */,
+				B45501341BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodeld in Sources */,
+				B45501281BD6982C00F8BFB2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B455012F1BD6982C00F8BFB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45501301BD6982C00F8BFB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B45501371BD6982C00F8BFB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45501381BD6982C00F8BFB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B455013B1BD6982C00F8BFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B455013C1BD6982C00F8BFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B455013E1BD6982C00F8BFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VinoLog_Remade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blakeoistad.VinoLog-Remade";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B455013F1BD6982C00F8BFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VinoLog_Remade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blakeoistad.VinoLog-Remade";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B455011E1BD6982C00F8BFB2 /* Build configuration list for PBXProject "VinoLog_Remade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B455013B1BD6982C00F8BFB2 /* Debug */,
+				B455013C1BD6982C00F8BFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B455013D1BD6982C00F8BFB2 /* Build configuration list for PBXNativeTarget "VinoLog_Remade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B455013E1BD6982C00F8BFB2 /* Debug */,
+				B455013F1BD6982C00F8BFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B45501321BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B45501331BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodel */,
+			);
+			currentVersion = B45501331BD6982C00F8BFB2 /* VinoLog_Remade.xcdatamodel */;
+			name = VinoLog_Remade.xcdatamodeld;
+			path = VinoLog_Remade/VinoLog_Remade.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B455011B1BD6982C00F8BFB2 /* Project object */;
+}
