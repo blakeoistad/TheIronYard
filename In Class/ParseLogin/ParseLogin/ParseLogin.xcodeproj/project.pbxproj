@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27707D5D140BAFB373A97554 /* Pods_ParseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0906047B6BAC5EF9EB3156E1 /* Pods_ParseLogin.framework */; };
+		B43642961BEA523900BA74F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43642951BEA523900BA74F3 /* AppDelegate.swift */; };
+		B43642981BEA523900BA74F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43642971BEA523900BA74F3 /* ViewController.swift */; };
+		B436429B1BEA523900BA74F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43642991BEA523900BA74F3 /* Main.storyboard */; };
+		B436429D1BEA523900BA74F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B436429C1BEA523900BA74F3 /* Assets.xcassets */; };
+		B43642A01BEA523900BA74F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B436429E1BEA523900BA74F3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0906047B6BAC5EF9EB3156E1 /* Pods_ParseLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F10FC1F5DFA208514E4FA8 /* Pods-ParseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseLogin/Pods-ParseLogin.release.xcconfig"; sourceTree = "<group>"; };
+		B43642921BEA523900BA74F3 /* ParseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43642951BEA523900BA74F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B43642971BEA523900BA74F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B436429A1BEA523900BA74F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B436429C1BEA523900BA74F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B436429F1BEA523900BA74F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B43642A11BEA523900BA74F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B452E9791BEA581A002B403E /* ParseLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParseLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7D2C60A95BD5BAB8CC5E3BD /* Pods-ParseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseLogin/Pods-ParseLogin.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B436428F1BEA523900BA74F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27707D5D140BAFB373A97554 /* Pods_ParseLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F84C6FC2F2CECFD41624F82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7D2C60A95BD5BAB8CC5E3BD /* Pods-ParseLogin.debug.xcconfig */,
+				18F10FC1F5DFA208514E4FA8 /* Pods-ParseLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B43642891BEA523900BA74F3 = {
+			isa = PBXGroup;
+			children = (
+				B43642941BEA523900BA74F3 /* ParseLogin */,
+				B43642931BEA523900BA74F3 /* Products */,
+				3F84C6FC2F2CECFD41624F82 /* Pods */,
+				F502CC2FDAC3300F1D4D30E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B43642931BEA523900BA74F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B43642921BEA523900BA74F3 /* ParseLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B43642941BEA523900BA74F3 /* ParseLogin */ = {
+			isa = PBXGroup;
+			children = (
+				B43642951BEA523900BA74F3 /* AppDelegate.swift */,
+				B43642971BEA523900BA74F3 /* ViewController.swift */,
+				B43642991BEA523900BA74F3 /* Main.storyboard */,
+				B436429C1BEA523900BA74F3 /* Assets.xcassets */,
+				B436429E1BEA523900BA74F3 /* LaunchScreen.storyboard */,
+				B43642A11BEA523900BA74F3 /* Info.plist */,
+				B452E9791BEA581A002B403E /* ParseLogin-Bridging-Header.h */,
+			);
+			path = ParseLogin;
+			sourceTree = "<group>";
+		};
+		F502CC2FDAC3300F1D4D30E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0906047B6BAC5EF9EB3156E1 /* Pods_ParseLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B43642911BEA523900BA74F3 /* ParseLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43642A41BEA523900BA74F3 /* Build configuration list for PBXNativeTarget "ParseLogin" */;
+			buildPhases = (
+				80F96D79625AB3CB961E4F70 /* Check Pods Manifest.lock */,
+				B436428E1BEA523900BA74F3 /* Sources */,
+				B436428F1BEA523900BA74F3 /* Frameworks */,
+				B43642901BEA523900BA74F3 /* Resources */,
+				C349811412E1711D5EA5CC87 /* Embed Pods Frameworks */,
+				3633BD4E2F83F88A8070A0FA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseLogin;
+			productName = ParseLogin;
+			productReference = B43642921BEA523900BA74F3 /* ParseLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B436428A1BEA523900BA74F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Blake Oistad";
+				TargetAttributes = {
+					B43642911BEA523900BA74F3 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = B436428D1BEA523900BA74F3 /* Build configuration list for PBXProject "ParseLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B43642891BEA523900BA74F3;
+			productRefGroup = B43642931BEA523900BA74F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B43642911BEA523900BA74F3 /* ParseLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B43642901BEA523900BA74F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43642A01BEA523900BA74F3 /* LaunchScreen.storyboard in Resources */,
+				B436429D1BEA523900BA74F3 /* Assets.xcassets in Resources */,
+				B436429B1BEA523900BA74F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3633BD4E2F83F88A8070A0FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseLogin/Pods-ParseLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F96D79625AB3CB961E4F70 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C349811412E1711D5EA5CC87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseLogin/Pods-ParseLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B436428E1BEA523900BA74F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43642981BEA523900BA74F3 /* ViewController.swift in Sources */,
+				B43642961BEA523900BA74F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B43642991BEA523900BA74F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B436429A1BEA523900BA74F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B436429E1BEA523900BA74F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B436429F1BEA523900BA74F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B43642A21BEA523900BA74F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B43642A31BEA523900BA74F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B43642A51BEA523900BA74F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D2C60A95BD5BAB8CC5E3BD /* Pods-ParseLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParseLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blakeoistad.ParseLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B43642A61BEA523900BA74F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F10FC1F5DFA208514E4FA8 /* Pods-ParseLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParseLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blakeoistad.ParseLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B436428D1BEA523900BA74F3 /* Build configuration list for PBXProject "ParseLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43642A21BEA523900BA74F3 /* Debug */,
+				B43642A31BEA523900BA74F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43642A41BEA523900BA74F3 /* Build configuration list for PBXNativeTarget "ParseLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43642A51BEA523900BA74F3 /* Debug */,
+				B43642A61BEA523900BA74F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B436428A1BEA523900BA74F3 /* Project object */;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Timers" representedClassName="Timers" syncable="YES">
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timerDirection" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timerLengthInSecs" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipTimerTimerSegments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TimerSegments" inverseName="relationshipTimerSegmentTimer" inverseEntity="TimerSegments" syncable="YES"/>
+    </entity>
+    <entity name="TimerSegments" representedClassName="TimerSegments" syncable="YES">
+        <attribute name="dateEntered" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="segmentLengthInSecs" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="segmentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="segmentOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="segmentPauseAtEnd" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipTimerSegmentTimer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Timers" inverseName="relationshipTimerTimerSegments" inverseEntity="Timers" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Timers" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="TimerSegments" positionX="115" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>

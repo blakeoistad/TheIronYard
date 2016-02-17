@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+
+
+target 'iMaintain' do
+
+pod 'GoogleAnalytics'
+pod 'Parse'
+
+end
+

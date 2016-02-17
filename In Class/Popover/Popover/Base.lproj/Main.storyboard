@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SPz-0r-4lf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Popover View Controller-->
+        <scene sceneID="xYj-3A-ObI">
+            <objects>
+                <viewController id="9ao-Cj-9Zn" customClass="DatePopoverViewController" customModule="Popover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WN8-YD-Muy"/>
+                        <viewControllerLayoutGuide type="bottom" id="FC7-Yd-DrO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="835-pd-sgf">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vGw-h8-9E4">
+                                <rect key="frame" x="-4" y="0.0" width="288" height="170"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="468866150.196132">
+                                    <!--2015-11-10 16:35:50 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="9ao-Cj-9Zn" eventType="valueChanged" id="dn0-Kl-Tbi"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FC7-Yd-DrO" firstAttribute="top" secondItem="vGw-h8-9E4" secondAttribute="bottom" id="5Ke-y5-dO8"/>
+                            <constraint firstItem="vGw-h8-9E4" firstAttribute="leading" secondItem="835-pd-sgf" secondAttribute="leadingMargin" constant="-20" id="L2F-UB-Yn7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vGw-h8-9E4" secondAttribute="trailing" constant="-20" id="fLF-Am-JbM"/>
+                            <constraint firstItem="vGw-h8-9E4" firstAttribute="top" secondItem="WN8-YD-Muy" secondAttribute="bottom" constant="-20" id="t2g-zX-srH"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="170"/>
+                    <connections>
+                        <outlet property="myDatePicker" destination="vGw-h8-9E4" id="ABO-8S-0tR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R99-H8-iGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608" y="874"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Popover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yrY-5F-TxG">
+                        <barButtonItem key="rightBarButtonItem" title="Start Date" id="rNj-AB-ZBy">
+                            <connections>
+                                <segue destination="9ao-Cj-9Zn" kind="popoverPresentation" identifier="datePopoverSegue" popoverAnchorBarButtonItem="rNj-AB-ZBy" id="dw3-8n-Xyk">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="1089"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l2U-pe-kFS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SPz-0r-4lf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ttl-Sf-mfS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u3p-cT-AsZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpq-jd-Bfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="1089"/>
+        </scene>
+    </scenes>
+</document>

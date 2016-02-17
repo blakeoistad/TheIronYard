@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y9G-Xe-0Yj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coffee Me-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sLV-en-CUm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5if-s3-ATH"/>
+                                    <outletCollection property="gestureRecognizers" destination="uvs-Jf-3o1" appends="YES" id="xN1-Nd-g8g"/>
+                                </connections>
+                            </mapView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Plf-nB-frz">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQh-Jc-PKv">
+                                <rect key="frame" x="0.0" y="108" width="600" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Apple"/>
+                                    <segment title="Address"/>
+                                    <segment title="Lat,Long"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IPH-Tg-YZj"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="sLV-en-CUm" secondAttribute="trailing" constant="-20" id="RKd-3p-duv"/>
+                            <constraint firstItem="Plf-nB-frz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XHe-At-Njp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Plf-nB-frz" secondAttribute="trailing" constant="-20" id="YIg-HR-Fw5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bQh-Jc-PKv" secondAttribute="trailing" constant="-20" id="ZR3-Hc-Kfs"/>
+                            <constraint firstItem="sLV-en-CUm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cXh-EH-IQO"/>
+                            <constraint firstItem="bQh-Jc-PKv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fSX-gN-jxQ"/>
+                            <constraint firstItem="bQh-Jc-PKv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="nBA-J5-8Z4"/>
+                            <constraint firstItem="bQh-Jc-PKv" firstAttribute="top" secondItem="Plf-nB-frz" secondAttribute="bottom" id="pA1-fB-dbt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sLV-en-CUm" secondAttribute="bottom" id="pgb-SS-6gp"/>
+                            <constraint firstItem="Plf-nB-frz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sap-Tb-kG3"/>
+                            <constraint firstItem="sLV-en-CUm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="vRk-iB-mfm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Coffee Me" id="LML-5I-tXu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="eih-vT-zfO"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="coffeeMapView" destination="sLV-en-CUm" id="XO4-lT-OAV"/>
+                        <outlet property="locationSearchBar" destination="Plf-nB-frz" id="gH3-xM-Aew"/>
+                        <outlet property="searchTypeSegControl" destination="bQh-Jc-PKv" id="x6z-zX-EG4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="uvs-Jf-3o1">
+                    <connections>
+                        <action selector="mapLongPressed:" destination="BYZ-38-t0r" id="HIu-w4-PnC"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1929" y="429"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="T5L-yg-hkW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ppG-sw-ljf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="1c1-Zr-LXI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bd2-bq-ckS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tev-yw-3H6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agv-ps-dPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jon-FJ-2My">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="y9G-Xe-0Yj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZNK-mh-MeL">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ppG-sw-ljf" kind="relationship" relationship="viewControllers" id="qGS-Gq-KFZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Tp-wd-A10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

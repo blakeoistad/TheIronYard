@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ayx-vf-FuR">
+                                <rect key="frame" x="20" y="20" width="240" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="4" translatesAutoresizingMaskIntoConstraints="NO" id="nKI-by-GM8">
+                                <rect key="frame" x="20" y="156" width="258" height="29"/>
+                                <segments>
+                                    <segment title="Vader"/>
+                                    <segment title="Leia"/>
+                                    <segment title="Luke"/>
+                                    <segment title="R2D2"/>
+                                    <segment title="C3PO"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="N2p-aM-9c2"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fav?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de4-mc-4Rf">
+                                <rect key="frame" x="27" y="216" width="56" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbq-UR-fRi">
+                                <rect key="frame" x="77" y="217" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nO4-EC-1is"/>
+                                </connections>
+                            </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-up-1If">
+                                <rect key="frame" x="27" y="271" width="94" height="29"/>
+                                <connections>
+                                    <action selector="ratingValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2by-r4-Cpa"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rk-f4-gvP">
+                                <rect key="frame" x="144" y="275" width="63" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bxz-v7-gel">
+                                <rect key="frame" x="0.0" y="308" width="600" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="EnS-vj-KsH"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="465139616.89648002">
+                                    <!--2015-09-28 13:26:56 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="meetingDateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HwJ-Eq-KfJ"/>
+                                </connections>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGS-Np-DT8">
+                                <rect key="frame" x="0.0" y="415" width="600" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="Psj-3z-FEj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Ci-zU-bpr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7ye-jP-KZ2"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FGS-Np-DT8" secondAttribute="trailing" constant="-20" id="AqG-T9-x0H"/>
+                            <constraint firstItem="FGS-Np-DT8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="HgT-0T-lUj"/>
+                            <constraint firstItem="Bxz-v7-gel" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VBJ-QP-fpL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bxz-v7-gel" secondAttribute="trailing" constant="-20" id="aH5-gC-t2V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterSegControl" destination="nKI-by-GM8" id="cCy-1c-3XK"/>
+                        <outlet property="discoverTextView" destination="Ayx-vf-FuR" id="dfd-rF-TbS"/>
+                        <outlet property="favSwitch" destination="wbq-UR-fRi" id="pfj-JK-kWr"/>
+                        <outlet property="meetingDatePicker" destination="Bxz-v7-gel" id="66Y-YD-3Jo"/>
+                        <outlet property="ratingStepper" destination="bJ2-up-1If" id="bGl-9v-QeI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="230"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cKu-pn-0Zw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppleCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykS-X3-tvk">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="myC-AX-mW3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lat" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCh-fN-Cgo">
+                                <rect key="frame" x="20" y="110" width="276" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-YK-MTq">
+                                <rect key="frame" x="0.0" y="164" width="600" height="120"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="yY4-Z7-afv"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="467817071.57530802">
+                                    <!--2015-10-29 13:11:11 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-kS-GGf">
+                                <rect key="frame" x="0.0" y="292" width="600" height="120"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="hIr-QK-856"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="467817071.57530802">
+                                    <!--2015-10-29 13:11:11 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lon" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csh-eP-2Nj">
+                                <rect key="frame" x="304" y="110" width="276" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="csh-eP-2Nj" secondAttribute="trailing" id="2Fx-nG-gUk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ykS-X3-tvk" secondAttribute="trailing" id="2si-Gc-Gbj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ykS-X3-tvk" secondAttribute="leading" id="AQl-KF-6RQ"/>
+                            <constraint firstItem="csh-eP-2Nj" firstAttribute="width" secondItem="FCh-fN-Cgo" secondAttribute="width" id="ER8-Zb-Y2D"/>
+                            <constraint firstItem="csh-eP-2Nj" firstAttribute="top" secondItem="ykS-X3-tvk" secondAttribute="bottom" constant="8" id="FsG-KZ-SXm"/>
+                            <constraint firstItem="YLH-kS-GGf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JT0-eE-E7X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QgB-YK-MTq" secondAttribute="trailing" constant="-20" id="KnX-p6-Shy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="FCh-fN-Cgo" secondAttribute="leading" id="RKD-sr-jqY"/>
+                            <constraint firstItem="YLH-kS-GGf" firstAttribute="top" secondItem="QgB-YK-MTq" secondAttribute="bottom" constant="8" id="S8f-Cd-uMp"/>
+                            <constraint firstItem="FCh-fN-Cgo" firstAttribute="top" secondItem="ykS-X3-tvk" secondAttribute="bottom" constant="8" id="Xvl-E5-F5h"/>
+                            <constraint firstItem="QgB-YK-MTq" firstAttribute="top" secondItem="FCh-fN-Cgo" secondAttribute="bottom" constant="24" id="be6-y4-wA4"/>
+                            <constraint firstItem="csh-eP-2Nj" firstAttribute="leading" secondItem="FCh-fN-Cgo" secondAttribute="trailing" constant="8" id="rQQ-9T-fYM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YLH-kS-GGf" secondAttribute="trailing" constant="-20" id="uUF-Uh-bns"/>
+                            <constraint firstItem="ykS-X3-tvk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vLe-Om-Imz"/>
+                            <constraint firstItem="QgB-YK-MTq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xoS-JF-vCz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZeD-cK-EZU">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Rem Add" id="ZBN-Py-zQd">
+                                <connections>
+                                    <action selector="createReminder:" destination="BYZ-38-t0r" id="NJq-vK-aue"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Find" id="Gn2-Fj-6Tu">
+                                <connections>
+                                    <action selector="fetchReminders" destination="BYZ-38-t0r" id="lJj-Ic-WNG"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Find" id="oOs-3f-szb">
+                                <connections>
+                                    <action selector="fetchCalEvents:" destination="BYZ-38-t0r" id="f0M-dH-Jdx"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Cal Add" id="NvV-PT-EkS">
+                                <connections>
+                                    <action selector="createCalEvent:" destination="BYZ-38-t0r" id="w99-uV-0zT"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calEndDatePicker" destination="YLH-kS-GGf" id="3NH-oc-rCs"/>
+                        <outlet property="calStartDatePicker" destination="QgB-YK-MTq" id="RvS-24-BdL"/>
+                        <outlet property="calTextField" destination="ykS-X3-tvk" id="tQe-au-1gr"/>
+                        <outlet property="latTextField" destination="FCh-fN-Cgo" id="fSL-HY-E3f"/>
+                        <outlet property="lonTextField" destination="csh-eP-2Nj" id="9bs-gu-tny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Obj-tc-AR4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cKu-pn-0Zw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XuD-t4-VJc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="T22-Q6-gRD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wS5-Ya-yhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="519"/>
+        </scene>
+    </scenes>
+</document>
