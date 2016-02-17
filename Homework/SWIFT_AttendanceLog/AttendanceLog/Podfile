@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+
+target 'AttendanceLog' do
+
+pod 'Parse'
+pod 'ParseUI'
+pod 'EstimoteSDK'
+
+end
+
