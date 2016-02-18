@@ -58,7 +58,6 @@ class ViewController: UIViewController {
     
     func updateUserStepsLabel() {
         let stepsType = HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
-        
         let endDate = NSDate()
         let dayCount = -7
         let startDate = NSCalendar.currentCalendar().dateByAddingUnit(.Day, value: dayCount, toDate: endDate, options: [])
