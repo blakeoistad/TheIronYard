@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         toDoArray = fetchToDos()!
         todoTableView.reloadData()
         let firstToDo = toDoArray.first
-        print("Count: \(toDoArray.count) ToDo:\(firstToDo!.todoDescription)")
+//        print("Count: \(toDoArray.count) ToDo:\(firstToDo!.todoDescription)")
     }
 
     override func didReceiveMemoryWarning() {
